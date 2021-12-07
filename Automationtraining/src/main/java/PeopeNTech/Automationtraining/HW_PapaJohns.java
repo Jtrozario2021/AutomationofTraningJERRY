@@ -40,7 +40,7 @@ public class HW_PapaJohns {
 		WebElement submitt=driver.findElement(By.xpath("//*[@class='button button-large']"));
 		submitt.click();
 		Thread.sleep(3000);
-		//details// size seleciton// quantity
+		//details// size selection// quantity
 		WebElement details=driver.findElement(By.xpath("//*[@aria-label='Details link of Hawaiian BBQ Chicken Pizza']"));
 		details.click();
 		Thread.sleep(2000);
