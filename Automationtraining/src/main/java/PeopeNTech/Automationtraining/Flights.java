@@ -21,9 +21,22 @@ public class Flights {
 		departure.click();
 		WebElement selectdatefor=driver.findElement(By.xpath("//*[@aria-label='Dec 25, 2021']"));
 		selectdatefor.click();
-		WebElement donebutton=driver.findElement(By.xpath("//*[@class='uitk-button uitk-button-medium uitk-button-has-text uitk-button-primary uitk-flex-item uitk-flex-shrink-0 dialog-done']"));
+		Thread.sleep(3000);
+		WebElement returndate=driver.findElement(By.xpath("//*[@aria-label='Dec 31, 2021']"));
+		returndate.click();
+		Thread.sleep(2000);
+		WebElement donebutton=driver.findElement(By.xpath("//*[@data-stid='apply-date-picker']"));
 		donebutton.click();
-		
+		Thread.sleep(2000);
+		WebElement returning=driver.findElement(By.id("d2-btn"));
+		returning.click();
+		Thread.sleep(2000);
+		WebElement selectdate2=driver.findElement(By.xpath("//*[@aria-label='Jan 4, 2022']"));
+		selectdate2.click();
+		Thread.sleep(2000);
+		WebElement returndate2=driver.findElement(By.xpath("//*[@aria-label='Jan 21, 2022']"));
+		returndate2.click();
+
 	
 	}
 

@@ -17,10 +17,10 @@ public static WebDriver driver;
 		WebElement fields=driver.findElement(By.xpath("html/body/div/div/div/div/div/div/div/div/div/form/div/div/input"));
 		fields.sendKeys("jerry");
 		Thread.sleep(3000);
-//		WebElement pass=driver.findElement(By.name("pass"));
-//		pass.sendKeys("123456789");
-//		WebElement login=driver.findElement(By.name("login"));
-//		login.click();
+		WebElement pass=driver.findElement(By.name("pass"));
+		pass.sendKeys("123456789");
+		WebElement login=driver.findElement(By.name("login"));
+		login.click();
 		
 		
 		//Xpath (relative) most use in selenium
