@@ -19,6 +19,10 @@ public class MousePointers {
 				Actions ob=new Actions(driver);
 				WebElement viewds=driver.findElement(By.id("nav-link-accountList"));
 				ob.moveToElement(viewds).build().perform();
+				Thread.sleep(3000);
+				WebElement books=driver.findElement(By.linkText("Prime Membership"));
+				ob.moveToElement(books).click().build().perform();
+				
 				
 				
 				
@@ -30,7 +34,7 @@ public class MousePointers {
 				
 				
 				Thread.sleep(10000);
-				//driver.close();
+				driver.close();
 					
 
 	}

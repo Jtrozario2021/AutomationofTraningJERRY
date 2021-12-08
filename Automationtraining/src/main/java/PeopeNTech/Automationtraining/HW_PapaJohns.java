@@ -1,6 +1,7 @@
 package PeopeNTech.Automationtraining;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -144,6 +145,7 @@ public class HW_PapaJohns {
 		Thread.sleep(3000);
 		WebElement placeorder=driver.findElement(By.xpath("//*[@id='place-your-order']"));		
 		placeorder.click();
+		
 		
 		Thread.sleep(30000);
 		driver.close();
