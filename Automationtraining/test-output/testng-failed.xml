@@ -3,19 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="PeopeNTech.Automationtraining.NewTestAnnotations">
+      <class name="PageObjectModel.SignInAmazon1">
         <methods>
-          <include name="afterTest"/>
           <include name="beforeMethod"/>
-          <include name="beforeClass"/>
-          <include name="f"/>
-          <include name="afterSuite"/>
-          <include name="beforeTest"/>
           <include name="afterMethod"/>
-          <include name="beforeSuite"/>
-          <include name="afterClass"/>
+          <include name="f"/>
         </methods>
-      </class> <!-- PeopeNTech.Automationtraining.NewTestAnnotations -->
+      </class> <!-- PageObjectModel.SignInAmazon1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

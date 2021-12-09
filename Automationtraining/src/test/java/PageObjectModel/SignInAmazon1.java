@@ -12,9 +12,21 @@ public class SignInAmazon1 {
   public void f() throws InterruptedException {
 	  Home ob=new Home(driver);
 	  ob.SignToClick();
-	  SignInPage it=new SignInPage(driver);
-	  it.EmailFieldSendkeys();
-	  it.ContinueButton();
+	  CreateNewAccount ob1= new CreateNewAccount(driver);
+	  ob1.CreateAccount();
+	  CreateAccountDetails ob2=new CreateAccountDetails(driver);
+	  ob2.customerName(driver);
+	  ob2.email(driver);
+	  ob2.Appassword(driver);
+	  ob2.Appasswordcheck(driver);
+	  ob2.Continuebtn(driver);
+	  
+	  
+	  
+//	  SignInPage it=new SignInPage(driver);
+//	  it.EmailFieldSendkeys();
+//	  it.ContinueButton();
+	  
   }
   @BeforeMethod
   public void beforeMethod() {
