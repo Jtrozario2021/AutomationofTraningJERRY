@@ -1,30 +1,36 @@
 package RestAssured;
 
-import static org.junit.Assert.assertEquals;
+import static io.restassured.RestAssured.*;  //most important that we have to manually call this library
 
-import org.testng.Assert;
+import java.io.File;
 
-import okhttp3.Response;
-import okhttp3.ResponseBody;
+import org.junit.Assert;
 
-public class API {
+import io.restassured.http.ContentType;
+import io.restassured.response.Response;
+import io.restassured.response.ResponseBody;
+
+
+
+public class ApiTest {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
-		Response responsiv= get("https://reqres.in/api/users?pages=2");
-		responsiv.prettyPrint();
-		int statusof=responsiv.statusCode();
-		System.out.println(statusof);
-Assert.assertEquals(statusof,  200);
-ResponseBody verifing =responsiv.getBody();
-String  converts=verifing.asString();
-
-assert.assertEquals(converts.contains("Funke"), true);
-
-
-
-
+		
+		
+		Response responsive = get("https://reqres.in/api/users?page=2");
+		responsive.prettyPrint();
+		 int statusc=responsive.statusCode();
+		 System.out.println(statusc);
+		 Assert.assertEquals(statusc, 200);
+		 
+		 ResponseBody verifying=responsive.getBody();
+		String converts= verifying.asString();
+		Assert.assertEquals(converts.contains("Funke"), true);
+		File it=new File("C:\\Users\\jerry\\eclipse-workspace\\MavenTest\\src\\test\\java\\RestAssured\\Automation.jason");
+		Response gt= given().contentType(ContentType.JSON).body(it).post("https://reqres.in/api/users?page=2");
+		gt.prettyPrint();
+		
 
 	}
 
