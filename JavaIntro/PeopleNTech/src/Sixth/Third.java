@@ -7,7 +7,7 @@ public class Third extends	Abstraction {
 		// TODO Auto-generated method stub
 Third obj=new Third();
 obj.multiply();
-obj.subtraction();
+obj.Subtraction();
 
 	}
 

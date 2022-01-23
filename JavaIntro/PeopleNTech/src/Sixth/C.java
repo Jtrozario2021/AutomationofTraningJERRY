@@ -23,4 +23,9 @@ obj.addition();
 		// TODO Auto-generated method stub
 		
 	}
+
+	public int getD() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }

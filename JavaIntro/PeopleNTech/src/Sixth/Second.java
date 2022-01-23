@@ -5,8 +5,8 @@ public class Second extends	Abstraction {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 Second obj=new Second();
-obj.subtraction();
-obj.divide();
+obj.Subtraction();
+obj.division();
 
 	}
 

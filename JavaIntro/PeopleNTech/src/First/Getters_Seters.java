@@ -1,6 +1,6 @@
 package First;
 
-import first.A;
+import Sixth.C;
 public class Getters_Seters {
 	private int d;
 	private int k;
@@ -22,14 +22,14 @@ public class Getters_Seters {
 	}
 
 	public static void main(String[] args) {
-		Object object;
+		Object object = null;
 // TODO Auto-generated method stub
 		A obj= new A();
-		object.addition();
-		C object= new C();
+		((A) object).addition();
+		C object1= new C();
 		
-object.getD(100);
-int t=object.getD();
+object1.getD();
+int t=object1.getD();
 System.out.println("This is T = "+t);
 
 

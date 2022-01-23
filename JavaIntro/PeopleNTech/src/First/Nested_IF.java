@@ -6,7 +6,7 @@ public class Nested_IF {
 		// TODO Auto-generated method stub
 		int d=6;
 		int w=60;
-		int v=600;
+		int v=60;
 		if(d>w)	{
 					if(d>v)	{
 						System.out.println("The bigger number is d="+d);

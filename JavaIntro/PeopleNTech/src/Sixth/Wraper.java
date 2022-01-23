@@ -19,7 +19,7 @@ public class Wraper {
 		
 		//Arraylist
 		
-		ArrayList students=new ArrayList<>();
+		ArrayList<Object> students=new ArrayList<>();
 		students.add(100);		//adding the value in the array
 		students.add(6000000000L);
 		students.add("students");
